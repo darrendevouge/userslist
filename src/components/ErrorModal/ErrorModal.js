@@ -20,7 +20,7 @@ const ErrorModal = (props) => {
                     <p>{props.message}</p>
                 </div>
                 <footer className={classes.actions}>
-                    <Button onClick={props.onConfirm}>OK</Button>
+                    <Button onClick={props.onConfirm}>Close</Button>
                 </footer>
             </Card>
         );
@@ -38,7 +38,8 @@ const ErrorModal = (props) => {
                 <ModalOverlay
                  title={props.title}
                  message={props.message}
-                 onConfirm={props.onConfirm} 
+                 onConfirm={props.onConfirm}
+                 btnmessage ="Close2" 
                 />,
                 document.getElementById('overlay-root')
              )}
