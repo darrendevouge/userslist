@@ -39,7 +39,6 @@ const ErrorModal = (props) => {
                  title={props.title}
                  message={props.message}
                  onConfirm={props.onConfirm}
-                 btnmessage ="Close2" 
                 />,
                 document.getElementById('overlay-root')
              )}
